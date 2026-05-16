@@ -1,0 +1,195 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "naming_series:",
+	"creation": "2026-05-16 12:00:00.000000",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"naming_series",
+		"company",
+		"re_unit_inventory",
+		"unit_reservation",
+		"customer",
+		"booking_date",
+		"agreement_value",
+		"section_commission",
+		"commission_schedule",
+		"broker",
+		"commission_amount",
+		"section_payment_plan",
+		"payment_plan",
+		"payment_plan_total",
+		"section_documents",
+		"signature_status",
+		"contract_amendments",
+		"sales_invoice",
+		"status",
+		"notes"
+	],
+	"fields": [
+		{
+			"default": "SBK-.####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "SBK-.####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "re_unit_inventory",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "RE Unit Inventory",
+			"options": "RE Unit Inventory",
+			"reqd": 1
+		},
+		{
+			"fieldname": "unit_reservation",
+			"fieldtype": "Link",
+			"label": "Unit Reservation",
+			"options": "Unit Reservation"
+		},
+		{
+			"fieldname": "customer",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Customer",
+			"options": "Customer"
+		},
+		{
+			"fieldname": "booking_date",
+			"fieldtype": "Date",
+			"label": "Booking Date"
+		},
+		{
+			"fieldname": "agreement_value",
+			"fieldtype": "Currency",
+			"label": "Agreement Value"
+		},
+		{
+			"fieldname": "section_commission",
+			"fieldtype": "Section Break",
+			"label": "Commission"
+		},
+		{
+			"fieldname": "commission_schedule",
+			"fieldtype": "Link",
+			"label": "Commission Schedule",
+			"options": "Sales Commission Schedule"
+		},
+		{
+			"fieldname": "broker",
+			"fieldtype": "Link",
+			"label": "Broker",
+			"options": "Supplier"
+		},
+		{
+			"fieldname": "commission_amount",
+			"fieldtype": "Currency",
+			"label": "Commission Amount",
+			"read_only": 1
+		},
+		{
+			"fieldname": "section_payment_plan",
+			"fieldtype": "Section Break",
+			"label": "Payment Plan (SPA)"
+		},
+		{
+			"fieldname": "payment_plan",
+			"fieldtype": "Table",
+			"label": "Installments",
+			"options": "Sales Payment Plan Item"
+		},
+		{
+			"fieldname": "payment_plan_total",
+			"fieldtype": "Currency",
+			"label": "Plan Total",
+			"read_only": 1
+		},
+		{
+			"fieldname": "section_documents",
+			"fieldtype": "Section Break",
+			"label": "SPA / Documents"
+		},
+		{
+			"default": "Draft",
+			"fieldname": "signature_status",
+			"fieldtype": "Select",
+			"label": "Signature Status",
+			"options": "Draft\nSent\nSigned"
+		},
+		{
+			"fieldname": "contract_amendments",
+			"fieldtype": "Table",
+			"label": "Amendments",
+			"options": "Contract Amendment Item"
+		},
+		{
+			"fieldname": "sales_invoice",
+			"fieldtype": "Link",
+			"label": "Sales Invoice",
+			"options": "Sales Invoice",
+			"read_only": 1
+		},
+		{
+			"default": "Draft",
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Status",
+			"options": "Draft\nApproved\nRegistered\nCancelled",
+			"reqd": 1
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-16 12:00:00.000000",
+	"module": "Erpgenex Realestate Sales",
+	"name": "Sales Booking",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"share": 1,
+			"write": 1
+		},
+		{
+			"create": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Desk User",
+			"share": 1,
+			"write": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

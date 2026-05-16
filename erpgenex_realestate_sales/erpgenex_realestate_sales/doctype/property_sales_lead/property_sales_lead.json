@@ -1,0 +1,138 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "naming_series:",
+	"creation": "2026-05-16 12:00:00.000000",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"naming_series",
+		"company",
+		"branch",
+		"lead_name",
+		"status",
+		"column_break_interest",
+		"development_project",
+		"re_unit_inventory",
+		"campaign",
+		"customer",
+		"source",
+		"notes"
+	],
+	"fields": [
+		{
+			"default": "PSL-.####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "PSL-.####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch"
+		},
+		{
+			"fieldname": "lead_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Lead Name",
+			"reqd": 1
+		},
+		{
+			"default": "New",
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Status",
+			"options": "New\nQualified\nNegotiation\nWon\nLost",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_interest",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "development_project",
+			"fieldtype": "Link",
+			"label": "Development Project",
+			"options": "Development Project"
+		},
+		{
+			"fieldname": "re_unit_inventory",
+			"fieldtype": "Link",
+			"label": "RE Unit Inventory",
+			"options": "RE Unit Inventory"
+		},
+		{
+			"fieldname": "campaign",
+			"fieldtype": "Data",
+			"label": "Campaign",
+			"description": "Marketing campaign reference for ROI reporting (GAP-SLS-05)."
+		},
+		{
+			"fieldname": "customer",
+			"fieldtype": "Link",
+			"label": "Customer (optional)",
+			"options": "Customer"
+		},
+		{
+			"fieldname": "source",
+			"fieldtype": "Select",
+			"label": "Source",
+			"options": "Walk-in\nCampaign\nBroker\nPortal\nOther"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Text Editor",
+			"label": "Notes"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-16 12:00:00.000000",
+	"module": "Erpgenex Realestate Sales",
+	"name": "Property Sales Lead",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"share": 1,
+			"write": 1
+		},
+		{
+			"create": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Desk User",
+			"share": 1,
+			"write": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

@@ -1,0 +1,18 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2026-05-16 18:00:00",
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1},
+  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date"},
+  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date"}
+ ],
+ "is_standard": "Yes",
+ "module": "Erpgenex Realestate Sales",
+ "name": "Campaign ROI",
+ "ref_doctype": "Property Sales Lead",
+ "report_name": "Campaign ROI",
+ "report_type": "Script Report",
+ "roles": [{"role": "System Manager"}, {"role": "Desk User"}]
+}
