@@ -27,3 +27,10 @@ def describe_sales_accounting_integration() -> dict[str, str]:
 		"booking_doctype": "Sales Booking",
 		"target_posting": "omnexa_accounting Sales Invoice (site-specific Item & tax mapping required)",
 	}
+
+
+@frappe.whitelist()
+def preview_sales_commission(sale_value: float, rate_percent: float = 2.5) -> dict:
+	from erpgenex_realestate_sales.re_sales_parity import preview_sales_commission as _preview
+
+	return _preview(sale_value, rate_percent)
