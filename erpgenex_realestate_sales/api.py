@@ -34,3 +34,10 @@ def preview_sales_commission(sale_value: float, rate_percent: float = 2.5) -> di
 	from erpgenex_realestate_sales.re_sales_parity import preview_sales_commission as _preview
 
 	return _preview(sale_value, rate_percent)
+
+
+@frappe.whitelist()
+def preview_sector_kpi(scenario: str | None = None, params: str | None = None) -> dict:
+	from omnexa_core.omnexa_core.vertical_api import preview_sector_kpi as _core_preview
+
+	return _core_preview("realestate_sales", scenario=scenario, params=params)

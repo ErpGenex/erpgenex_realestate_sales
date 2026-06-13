@@ -1,0 +1,1 @@
+frappe.pages["rs-sales-portal"].on_page_load = function(w){ frappe.ui.make_app_page({parent:w, title:"rs-sales-portal", single_column:1}); };
