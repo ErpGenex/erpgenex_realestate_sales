@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Erpgenex Realestate Sales",
+	"name": "realestate-sales-workcenter",
+	"page_name": "realestate-sales-workcenter",
+	"standard": "Yes",
+	"title": "RE Marketing Workcenter",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
