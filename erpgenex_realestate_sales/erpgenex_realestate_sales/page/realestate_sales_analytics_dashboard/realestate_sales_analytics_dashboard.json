@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Erpgenex Realestate Sales",
+	"name": "realestate-sales-analytics-dashboard",
+	"page_name": "realestate-sales-analytics-dashboard",
+	"standard": "Yes",
+	"title": "Analytics Dashboard",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
